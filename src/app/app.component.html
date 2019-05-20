@@ -1,0 +1,6 @@
+<input type='file' #fileImportInput name='File Upload' id='txtFileUpload' (change)='fileChangeListener($event)' accept='.csv' />
+<table>
+  <tr *ngFor='let item of csvRecords'>
+    <td *ngFor='let single of item'>{{single}}</td>
+  </tr>
+</table>
